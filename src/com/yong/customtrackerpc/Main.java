@@ -45,9 +45,23 @@ public class Main {
 
     static void getParcelData(String strURL){
         try {
-            Source htmlSource = new Source(new URL(strURL));
-
-            System.out.println(htmlSource);
+            Source pageResult = new Source(new URL(strURL));
+            String[] lines = pageResult.toString().split("\n");
+            String strResult = "";
+            for(int i = 0; i < 3; i++){
+                switch(i){
+                    case 0:
+                        strResult = "물품명 : %s";
+                        break;
+                    case 1:
+                        strResult = "담당세관 : %s";
+                        break;
+                    case 2:
+                        strResult = "물품중량 : %skg";
+                        break;
+                }
+                System.out.println(String.format(strResult, lines[i]));
+            }
         } catch (IOException exception) {
             exception.printStackTrace();
         }
