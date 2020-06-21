@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="CustomTracker_Client_JAVA:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CustomTracker_Client_JAVA_jar</output-path>
+    <root id="archive" name="CustomTracker_Client_JAVA.jar">
+      <element id="module-output" name="CustomTracker_Client_JAVA" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/jericho-html-3.4.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
