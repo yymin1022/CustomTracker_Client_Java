@@ -27,9 +27,8 @@ public class Main {
     }
 
     static void getParcelData(String strURL){
-        Source htmlSource = null;
         try {
-            htmlSource = new Source(new URL(strURL));
+            Source htmlSource = new Source(new URL(strURL));
             List<Element> tagList = htmlSource.getAllElements();
 
             System.out.println(htmlSource);
