@@ -19,9 +19,9 @@
   </classPath>
   <jre>
     <path>C:\Users\yymin\.jdks\openjdk-14.0.1</path>
-    <bundledJre64Bit>true</bundledJre64Bit>
+    <bundledJre64Bit>false</bundledJre64Bit>
     <bundledJreAsFallback>false</bundledJreAsFallback>
-    <minVersion>14</minVersion>
+    <minVersion></minVersion>
     <maxVersion></maxVersion>
     <jdkPreference>preferJre</jdkPreference>
     <runtimeBits>64/32</runtimeBits>
